@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلايدر رئيسي</title>
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PiRHwN6Q0JzQ5J5gk5K8+5+5j5J5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+    <style>
+        *{
+            font-family:"Cairo", Sans-serif;
+        }
+
+        .card-img {
+            height: 300px;          /* ← تحديد الارتفاع */
+            object-fit: cover; 
+        
+        }
+        .about{
+        margin-bottom:4% ;
+  
+        }
+            .card .overlay {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.6); /* 0.4 = الشفافية */
+          z-index: 1;
+        }
+        .howwe{
+        
+        position: relative;
+            z-index: 2;
+          background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));
+            padding: 10px 150px;
+          
+            border-radius: 5px;
+        }
+        .pp p{
+        margin-bottom: 0%;
+        /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+        }
+        .font{
+           font-size: 30px;
+
+        }
+        </style>
+        
+</head>
+<body>
+    <!-- مكان الشريط العلوي -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="card text-bg-dark about">
+        <img src="https://th.bing.com/th/id/OIP.NUlwNjPkWPWiDx6B-3ZjyQHaEu?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img" alt="...">
+        <div class="overlay"></div>
+        <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+          <div>
+            <h5 class="card-title fs-1 howwe">من نحن</h5>
+            <p class="card-text">
+              <!-- هذا نص توضيحي أطول قليلاً، يدعم محتوى البطاقة ويظهر في منتصف الصورة. -->
+            </p>
+            <!-- <p class="card-text"><small>آخر تحديث قبل 3 دقائق</small></p> -->
+          </div>
+        </div>
+      </div>
+    
+      
+    
+      <div class="row row-cols-1 row-cols-md-4 gx-4 gy-4 justify-content-center mb-5 px-5">
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center border-0 shadow" style="width: 100%;">
+            <div class="card-body">
+              <i class="bi-person-lines-fill" style="font-size: 2.2rem; color: #0d6efd;"></i>
+              <p class="card-text mt-3 font">مدرب دولي محترف</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center border-0 shadow" style="width: 100%;">
+            <div class="card-body">
+              <i class="bi bi-gear-fill" style="font-size: 2.2rem; color: #0d6efd;"></i>
+              <p class="card-text mt-3 font">رائد اعمال في البيع المباشر</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center border-0 shadow" style="width: 100%;">
+            <div class="card-body">
+              <i class="bi-graph-up" style="font-size: 2.2rem; color: #0d6efd;"></i>
+              <p class="card-text mt-3 font">مستشار تسويق للعديد من العلامات التجارية</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col d-flex align-items-stretch">
+          <div class="card text-center border-0 shadow" style="width: 100%;">
+            <div class="card-body">
+              <i class="bi-cash-stack" style="font-size: 2.2rem; color: #0d6efd;"></i>
+              <p class="card-text mt-3 font">شريك أعمال لدى شركة DXN العالمية</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    
+    <!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>المدرب نبيل الجعفري</title>
+  <!-- Bootstrap 5 RTL -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <div class="container mt-5">
+    <div class="row mb-5">
+      
+      <!-- بيانات المدرب -->
+      <div class="col-md-6 text-md-end mb-4 mb-md-0">
+        <h4 class="mb-3 font">المدرب نبيل صالح الجعفري</h4>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item fs-5">🔹 مدرب دولي محترف</li>
+          <li class="list-group-item fs-5">🔹 رائد أعمال في البيع المباشر</li>
+          <li class="list-group-item fs-5">🔹 مستشار تسويق للعديد من العلامات التجارية</li>
+          <li class="list-group-item fs-5">🔹 شريك أعمال لدى شركة DXN العالمية</li>
+        </ul>
+      </div>
+
+      <!-- شريط الصور -->
+      <div class="col-md-6">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+          <!-- المؤشرات -->
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="الشريحة 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="الشريحة 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="الشريحة 3"></button>
+          </div>
+
+          <!-- الشرائح -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="https://ecceconferences.org/wp-content/uploads/2017/11/business-consulting2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>الاحترافية</h5>
+                <p>تقديم استشارات عالية الجودة</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://ecceconferences.org/wp-content/uploads/2017/11/business-consulting2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>القيادة</h5>
+                <p>خبرة في التدريب وقيادة الفرق</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="https://ecceconferences.org/wp-content/uploads/2017/11/business-consulting2.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>التسويق</h5>
+                <p>خبرة في تطوير العلامات التجارية</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- أزرار الانتقال -->
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">السابق</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">التالي</span>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+    
+    
+    
+    
+    
+    <div class="card mb-3 m-5" >
+    <div class="row g-0">
+      <div class="col-md-4 mt-3 ml-3 mb-3 m-3 ">
+        <img src="../ماهي-dxn-2048x1536.webp" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-6" >
+        <div class="card-body m-0">
+          <h5 class="card-title" style=" font-size: 30px; background:linear-gradient(to right, rgba(61, 120, 182, 1), rgb(25, 121, 218)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">ما هي DXN ..؟</h5>
+          <p class="card-text" style="font-size: 25px;">شركة DXN هي منظمة تجارية عالمية مقرها الرسمي في ماليزيا تسمى الشـــركـــة المتكاملة لأنها تزرع، وتصنّع، وتسوّق تحت سقف واحد وبأعلى معايير الجودة الدولية والتصنيع الحسن.
+تعتبر DXN إحدى أكبر شركات البيع المباشر في العالم وقد تأسست منذ ٣٠ عام. تتنوع منتجاتها الصحية الطبيعية بين مكملات غذائية عضوية ومنتجات العناية الشخصية والبشرة والتجميل والقهوة والمشروبات والعصائر والعديد من المنتجات الأخرى .. الشركة الوحيدة التي ترفع شعار عالم واحد سوق واحد ،حيث يتمتع أعضاء DXN بحوافز وعمولات دولية بعضوية واحدة.</p>
+          <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+    </div>
+    <div class="card mb-3 m-5" >
+    <div class="row g-0">
+      <div class="col-md-4 d-flex align-items-center justify-content-center ">
+        <img src="../لماذاا.webp" class="img-fluid rounded-start" alt="...">
+      </div>
+      <div class="col-md-6" >
+        <div class="card-body m-0 pp">
+          <h5 class="card-title" style="  font-size: 30px; background:linear-gradient(to right, rgba(61, 120, 182, 1), rgb(25, 121, 218)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">لماذا DXN ؟</h5>
+          <p class="card-text " style="font-size: 25px;">لماذا DXN هي خيارك الأمثل..؟
+     <p>استثمار ذكي </p>
+      <p>» مشروع ذكي رأسماله الاستهلاك وعضوية مجانية طول العمر وتورث بعد الموت.</p>
+       <p>» فرصة عالمية تخولك للعمل في أي دولة من مكانك الذي أنت فيه</p>
+        <p>» عوائد مالية مجزية بخُطة سهلة وقوية</p>
+         <p>» عمولات مستمرة و نظام توريث للدخل</p>
+          <p>» مشاركة أرباح دولية من مبيعات الشركة</p>
+» رحلات وسفر ومؤتمرات وترفيه</p>
+<a href="services.html" class="btn "style="  background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));" > معــرفة المــــزيد</a>
+          <!-- <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p> -->
+        </div>
+      </div>
+    </div>
+    </div>
+       <div class="card mb-3 m-5" >
+    <div class="row g-0">
+        <div class="col-md-6 d-flex align-items-center justify-content-center" >
+        <div class="card-body m-0 pp">
+          <h5 class="card-title" style=" font-size: 40px; background:linear-gradient(to right, rgba(61, 120, 182, 1), rgb(25, 121, 218)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">منتجات استثنائية</h5>
+          <p class="card-text" style="font-size: 25px;">
+
+<p style="font-size: 20px;">» استهلاك يومي لمنتجات صحية عضوية لطرد السموم وتعزيز المناعة وتقوية الجسم والحفاظ على البشرة والجلد</p>
+<p style="font-size: 20px;">» ضمان الجودة والثقة بالمنتجات</p>
+<p style="font-size: 20px;">» منتجات استهلاكية عضوية بأسعار مناسبة</p>
+<p style="font-size: 20px;">» أرباح شهرية من المستهلكات والمبيعات</p>
+</p>
+<a href="categories.php" class="btn "style="  background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));" > معــرفة المــــزيد</a>
+          
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 ml-3 mb-3 m-3 ">
+        <img src="../منتجات-استثنائية2-2048x779.webp" class="img-fluid rounded-start" alt="...">
+      </div>
+    
+    </div>
+    </div>  
+    
+        <div class="card mb-3 m-5" >
+    <div class="row g-0">
+        <div class="col-md-6" >
+        <div class="card-body m-0 pp">
+          <h5 class="card-title" style=" font-size: 40px; background:linear-gradient(to right, rgba(61, 120, 182, 1), rgb(25, 121, 218)); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">منتجات استثنائية</h5>
+          <p class="card-text" style="font-size: 25px;">
+
+<p style="font-size: 20px;">» شركة قوية ومستقرة مع سجل دولي حافل بالإنجازات</p>
+<p style="font-size: 20px;">» شركة متكاملة و بلا ديون</p>
+<p style="font-size: 20px;">» معتمدة من قبل هيئات مراقبة الجودة المعترف بها دولياً</p>
+<p style="font-size: 20px;">» موجودة في أكثر من ١٨٠ دولة</p>
+<p style="font-size: 20px;">» عدد أعضائها ١٦.٢ مليون وتعتبر الأسرع نمواً في العالم</p>
+<p style="font-size: 20px;">» حائزة على رتبة ١٥ من بين أقوى ١٠٠ شركة عالمية في البيع المباشر</p>
+</p>
+<!-- <a href="categories.php" class="btn "style="  background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));" > معــرفة المــــزيد</a> -->
+          
+        </div>
+      </div>
+      <div class="col-md-4 mt-3 ml-3 mb-3 m-3 ">
+        <img src="../الاستقرار-والاستمرارية.webp" class="img-fluid rounded-start" alt="...">
+      </div>
+    
+    </div>
+    </div>  
+
+    <div class="card text-bg-dark about">
+        <img src="../envato-labs-ai-c1b3f9f0-50e8-487a-8c23-8ad6071770ef.jpg" class="card-img" alt="...">
+        <div class="overlay"></div>
+        <div class="card-img-overlay d-flex justify-content-center align-items-center text-center">
+          <div >
+            <h5 class="card-title fs-1c position-relative z-2 fs-1">موقعنا</h5>
+            <p class="card-text position-relative z-2 fs-3 " >
+                موقع لكل من يبحث عن حياة مستقله صحياً ومالياً. وتحقيق ذلك فعلياً من خلال متجرنا وخدماتنا المتوفره بين يديك في الموقع.
+            </p>
+            <a href="#" class="btn btn-primary position-relative z-2">معرفة المزيد</a>
+            <a href="categories.php" class="btn btn-primary position-relative z-2">المتجر</a>
+          </div>
+        </div>
+      </div>
+      
+    <!-- مكان الفوتر -->
+    <div id="footer_p"></div>
+
+    <script>
+        // تحميل الهيدر مع معالجة الأخطاء
+        fetch("header.html")
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+                document.getElementById("navbar-placeholder").innerHTML = '<nav class="navbar bg-light"><div class="container"><a class="navbar-brand" href="#">الرئيسية</a></div></nav>';
+            });
+
+        // تحميل الفوتر مع معالجة الأخطاء
+        fetch("footer.html")
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("footer_p").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                document.getElementById("footer_p").innerHTML = '<footer class="py-3 bg-light"><div class="container"><p class="text-center">© 2023 جميع الحقوق محفوظة</p></div></footer>';
+            });
+
+            
+            
+    </script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <a href="https://wa.me/967712016614?text=مرحبا%20نبيل%20صالح%20الجعفري" target="_blank" id="whatsapp-button"> <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
+<style>
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+   
+
+    z-index: 1000;
+}
+#whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+#whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+</style>
+</body>
+</html>

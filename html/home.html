@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلايدر رئيسي</title>
+    <!-- Bootstrap 5 RTL -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.rtl.min.css" integrity="sha384-PiRHwN6Q0JzQ5J5gk5K8+5+5j5J5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5k5" crossorigin="anonymous">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+   <style>
+    
+     
+         .carousel-caption h5{
+
+            z-index: 2;
+    background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 5px;
+         }  
+           .carousel-item {
+  position: relative;
+
+  
+
+}
+
+.carousel-item .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* 0.4 = الشفافية */
+  z-index: 1;
+}
+
+/* نرفع النص فوق الـ overlay */
+.carousel-caption {
+  z-index: 2;
+  position: relative;
+}
+.carousel-item {
+  height: 100vh;
+}
+
+.carousel-item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+       
+.stats-section {
+      background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1)); /* لون متدرج أزرق-بنفسجي */
+    color: white;
+    padding: 50px 30px;
+    border-radius: 20px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  }
+
+  .stat-item {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 25px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+    text-align: center;
+    transition: transform 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  .stat-item:hover {
+    transform: scale(1.05);
+  }
+
+  .stat-number {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .stat-label {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #e6e6e6;
+  }
+
+  .section-title {
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .rank-section {
+    background: #fff;
+    border-left: 6px solid #6610f2;
+    padding: 40px 20px;
+    height: 100%;
+    border-radius: 20px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .rank-subtext {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #6610f2;
+  }
+  .welcome-text{
+  text-align: center;
+  font-size: 20px;
+  margin: top 30px;
+
+  }
+  .card-text{
+    font-size: large;
+  }
+  *{
+    font-family: 'Cairo', sans-serif;
+  }
+    </style>
+</head>
+<body>
+    <!-- مكان الشريط العلوي -->
+    <div id="navbar-placeholder"></div>
+    <div id="carouselExampleCaptions" class="carousel slide ">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner ">
+          <div class="carousel-item active ">
+            <img src="https://th.bing.com/th/id/R.3549703633e458f5a20f1e81fb7663c9?rik=614O6BBkCwcvkA&riu=http%3a%2f%2fecceconferences.org%2fwp-content%2fuploads%2f2017%2f11%2fbusiness-consulting2.jpg&ehk=JWalvpDJsejii3wDi%2bUQdGzz7fX%2f2tyt20bFK11QVtQ%3d&risl=&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100
+            ">
+           <img src="../Picsart_25-07-27_22-09-10-575.png" style="height: 62%; margin-bottom: 0%;" alt="">
+            <h5>نـــــبيل الرعينـــــي</h5>
+              <p>Some representative placeholder content for the first slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.byWxIqahI2vyH0G5PZ0t3wHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100
+            ">
+              <h5>Second slide label</h5>
+              <p>Some representative placeholder content for the second slide.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/OIP.byWxIqahI2vyH0G5PZ0t3wHaE7?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="d-block w-100" alt="...">
+            <div class="overlay"></div>
+
+            <div class="carousel-caption d-flex flex-column justify-content-center align-items-center h-100
+            ">
+              <h5>Third slide label</h5>
+              <p>Some representative placeholder content for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+
+    <div class="container py-5 ">
+        <!-- قسم الترحيب -->
+        <div class="welcome-section">
+            <div  style="font-size: 30px;"   class="welcome-tex">
+                <p>المدرب نبيل صالح الجعفري</p>
+            </div>
+            
+        </div>
+    </div>
+
+ <div class="row row-cols-1 row-cols-md-4 gx-4 gy-4 justify-content-center mb-5">
+    
+        <div class="col shadow">
+          <div class="card text-center border-0 " style="width: 100%;">
+            <div class="card-body">
+              <!-- <i class="bi bi-gear-fill" style="font-size: 4rem; color: #0d6efd;"></i> -->
+              <p class="card-text mt-3">مدرب دولي محترف</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col shadow">
+          <div class="card text-center border-0 " style="width: 100%;">
+            <div class="card-body">
+              <!-- <i class="bi bi-gear-fill" style="font-size: 4rem; color: #0d6efd;"></i> -->
+              <p class="card-text mt-3">رائد اعمال في البيع المباشر</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="col shadow">
+          <div class="card text-center border-0 " style="width: 100%;">
+            <div class="card-body">
+              <!-- <i class="bi bi-gear-fill  " style="font-size: 4rem; color: #0d6efd;"></i> -->
+              <p class="card-text mt-3">شريك اعمال لدى DXNالعالمية</p>
+            </div>
+          </div>
+        </div>
+      
+      
+        
+      </div>
+        <a href="about.html " class="btn btn-primary" style=" background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));">  معرفة المزيد عنا</a>
+      
+      <div class="welcome-section">
+            <div class="welcome-text">
+                <p>سعيد أن تكون بين جنبات هذا الكيان، أطلب أن تعد ما يليّ اختياراتك الصحية والعالية، بين يديك أجود المنتجات الصحية والخدمات الذكية لشركة DXN العالمية.</p>
+            </div>
+            
+        </div>
+  
+
+        <!-- قسم الإحصائيات -->
+       <div class="container my-5">
+  <!-- نفس الكود الذي كتبته انت -->
+<div class="row">
+  <div class="col-md-12">
+    <div class="stats-section" id="stats">
+      <h3 class="section-title">ثقوا بنا</h3>
+      <h4 class="section-title mb-4">احصائياتنا</h4>
+
+      <div class="row text-center">
+        <div class="col-md-3">
+          <div class="stat-item">
+            <div class="stat-number" data-target="10">0</div>
+            <div class="stat-label">سنوات من الخبرة</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <div class="stat-number" data-target="5000000">0</div>
+            <div class="stat-label">زوار الموقع</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <div class="stat-number" data-target="16000000">0</div>
+            <div class="stat-label">عضو</div>
+          </div>
+        </div>
+        <div class="col-md-3">
+          <div class="stat-item">
+            <div class="stat-number" data-target="186">0</div>
+            <div class="stat-label">فروعنا</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <div class="welcome-text m-4" style="font-size: 30px;">
+                <p>خدماتنا</p>
+            </div>
+</div>
+<div class="row row-cols-1 row-cols-md-2 g-4 m-4">
+    <div class="col shadow">
+      <div class="card border-0">
+        <img src="https://th.bing.com/th/id/OIP.NUlwNjPkWPWiDx6B-3ZjyQHaEu?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center">
+          <h5 class="card-title text-info fs-2 fw-bolder">فرص عمل عبر الانترنت</h5>
+          <p class="card-text"> ابدا مشروعك التجاري وغير حياتك بالعمل من النت مع اكبر الشركات العالمة وبدون رأس مال انطلق الان وبدون اي تردد</p>
+      <a href="services.html" class="btn" style="    background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));">معـــرفة المــزيد</a>
+        </div>
+      </div>
+    </div>
+    <div class="col shadow">
+      <div class="card border-0">
+        <img src="https://th.bing.com/th/id/OIP.NUlwNjPkWPWiDx6B-3ZjyQHaEu?r=0&o=7rm=3&rs=1&pid=ImgDetMain&o=7&rm=3" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-center align-items-center ">
+          <h5 class="card-title text-info fs-2 fw-bolder">تـــــسوق الان</h5>
+          <p class="card-text">افضل المنتجات العصوية بأسلوب تسوق سهل وخيرات موسوعة ,نهدف لبناء مجتمع واعي وصحي ويتخذ المنتجات العضوية كنمط حياة مستجدام</p>
+          <a href="categories.php" class="btn " style="background: linear-gradient(to right, rgba(61, 120, 182, 1), rgba(179, 216, 255, 1));">عـــرض المــزيد</a>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+
+    <!-- مكان الفوتر -->
+    
+    <div class="m-0"   id="footer_p"></div>
+
+    <script>
+        // تحميل الهيدر مع معالجة الأخطاء
+        fetch("header.html")
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("navbar-placeholder").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+                document.getElementById("navbar-placeholder").innerHTML = '<nav class="navbar bg-light"><div class="container"><a class="navbar-brand" href="#">الرئيسية</a></div></nav>';
+            });
+
+        // تحميل الفوتر مع معالجة الأخطاء
+        fetch("footer.html")
+            .then(response => {
+                if (!response.ok) throw new Error('Network response was not ok');
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById("footer_p").innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading footer:', error);
+                document.getElementById("footer_p").innerHTML = '<footer class="py-3 bg-light"><div class="container"><p class="text-center">© 2023 جميع الحقوق محفوظة</p></div></footer>';
+            });
+
+
+            
+  let counted = false;
+
+  function animateCounter(el) {
+    const target = +el.getAttribute("data-target");
+    const duration = 3000; // 2 ثانية
+    const increment = target / (duration / 30); // زيادة تدريجية كل 30ms
+
+    let count = 0;
+    const update = () => {
+      count += increment;
+      if (count < target) {
+        el.textContent = Math.floor(count).toLocaleString();
+        requestAnimationFrame(update);
+      } else {
+        el.textContent = target.toLocaleString();
+      }
+    };
+    update();
+  }
+
+  const observer = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !counted) {
+        document.querySelectorAll(".stat-number").forEach(el => {
+          animateCounter(el);
+        });
+        counted = true;
+        obs.disconnect(); // نوقف المراقبة بعد العد
+      }
+    });
+  });
+
+  observer.observe(document.getElementById("stats"));
+
+
+    </script>
+    
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <a href="https://wa.me/967712016614?text=مرحبا%20نبيل%20صالح%20الجعفري" target="_blank" id="whatsapp-button"> <img src="https://img.icons8.com/color/48/000000/whatsapp.png" alt="WhatsApp"></a>
+<style>
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+   
+
+    z-index: 1000;
+}
+#whatsapp-button img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+#whatsapp-button img:hover {
+    transform: scale(1.1);
+}
+</style>
+</body>
+</html>
